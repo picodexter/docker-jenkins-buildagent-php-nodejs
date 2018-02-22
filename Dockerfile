@@ -27,6 +27,9 @@ RUN echo "Updating APT cache ..." \
         php${PHP_VERSION}-xml \
         > /dev/null \
 
+    && echo "PHP: Installing Composer ..." \
+    && wget -qO- https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --quiet \
+
     && echo "Node.js: Setting up repository deb.nodesource.com ..." \
     && curl -sL https://deb.nodesource.com/setup_${NODE_JS_BRANCH} | bash - > /dev/null \
     && echo "Node.js: Installing Node.js packages ..." \

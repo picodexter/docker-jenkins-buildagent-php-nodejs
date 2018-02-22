@@ -35,6 +35,9 @@ RUN echo "Updating APT cache ..." \
     && echo "Node.js: Installing Node.js packages ..." \
     && apt-get install -qy --no-install-recommends nodejs build-essential > /dev/null \
 
+    && echo "Cleaning up APT cache ..." \
+    && rm -rf /var/lib/apt/lists/* \
+
     && echo "All done!"
 
 USER jenkins

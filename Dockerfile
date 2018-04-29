@@ -31,6 +31,8 @@ RUN echo "Updating APT cache ..." \
     && curl -sL https://deb.nodesource.com/setup_${NODE_JS_BRANCH} | bash - > /dev/null \
     && echo "Node.js: Installing Node.js packages ..." \
     && apt-get install -qy --no-install-recommends nodejs build-essential > /dev/null \
+    && echo "Ant: Installing Ant ..." \
+    && apt-get install -qy --no-install-recommends ant > /dev/null \
     && echo "Cleaning up APT cache ..." \
     && rm -rf /var/lib/apt/lists/* \
     && echo "All done!"

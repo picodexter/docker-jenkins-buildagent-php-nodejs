@@ -31,6 +31,13 @@ RUN echo "Updating APT cache ..." \
     && curl -sL https://deb.nodesource.com/setup_${NODE_JS_BRANCH} | bash - > /dev/null \
     && echo "Node.js: Installing Node.js packages ..." \
     && apt-get install -qy --no-install-recommends nodejs build-essential > /dev/null \
+    && echo "Yarn: Setting up repository dl.yarnpkg.com ..." \
+    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
+    && sh -c 'echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list' \
+    && echo "Yarn: Updating APT cache ..." \
+    && apt-get update -q > /dev/null \
+    && echo "Yarn: Installing Yarn ..." \
+    && apt-get install -qy --no-install-recommends yarn > /dev/null \
     && echo "Ant: Installing Ant ..." \
     && apt-get install -qy --no-install-recommends ant > /dev/null \
     && echo "Cleaning up APT cache ..." \

@@ -24,6 +24,7 @@ RUN echo "Updating APT cache ..." \
         php${PHP_VERSION}-mysql \
         php${PHP_VERSION}-xdebug \
         php${PHP_VERSION}-xml \
+        php${PHP_VERSION}-zip \
         > /dev/null \
     && echo "PHP: Installing Composer ..." \
     && wget -qO- https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --quiet \

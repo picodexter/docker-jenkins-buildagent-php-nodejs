@@ -12,6 +12,19 @@ This Docker image enables running builds for applications in a PHP and Node.js e
 
     Utilizes official packages from [nodejs.org](https://nodejs.org/en/download/package-manager/).
 
+## Included Software
+
+*   [PHP](http://www.php.net/)
+
+    *   [Composer](https://getcomposer.org/)
+
+*   [Node.js](https://nodejs.org/)
+
+    *   [NPM](https://www.npmjs.com/)
+    *   [Yarn](https://yarnpkg.com/)
+
+*   [Apache Ant](https://ant.apache.org/)
+
 ## License
 
 This repository is released under the [MIT license](LICENSE).

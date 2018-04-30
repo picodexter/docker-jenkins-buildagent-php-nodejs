@@ -40,7 +40,7 @@ RUN echo "Updating APT cache ..." \
     && echo "Yarn: Installing Yarn ..." \
     && apt-get install -qy --no-install-recommends yarn > /dev/null \
     && echo "Ant: Installing Ant ..." \
-    && apt-get install -qy --no-install-recommends ant > /dev/null \
+    && apt-get install -qy --no-install-recommends ant ant-optional > /dev/null \
     && echo "rsync: Installing rsync ..." \
     && apt-get install -qy --no-install-recommends rsync > /dev/null \
     && echo "Cleaning up APT cache ..." \

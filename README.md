@@ -24,6 +24,7 @@ This Docker image enables running builds for applications in a PHP and Node.js e
     *   [Yarn](https://yarnpkg.com/)
 
 *   [Apache Ant](https://ant.apache.org/)
+*   [rsync](https://rsync.samba.org/)
 
 ## License
 

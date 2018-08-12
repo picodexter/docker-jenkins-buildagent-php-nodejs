@@ -39,6 +39,8 @@ RUN echo "Updating APT cache ..." \
     && apt-get update -q > /dev/null \
     && echo "Yarn: Installing Yarn ..." \
     && apt-get install -qy --no-install-recommends yarn > /dev/null \
+    && echo "webpack: Installing webpack packages ..." \
+    && apt-get install -qy --no-install-recommends libpng-dev > /dev/null \
     && echo "Ant: Installing Ant ..." \
     && apt-get install -qy --no-install-recommends ant ant-contrib ant-optional libjsch-java > /dev/null \
     && echo "rsync: Installing rsync ..." \

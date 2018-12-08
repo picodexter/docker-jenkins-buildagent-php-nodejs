@@ -8,7 +8,7 @@ This Docker image enables running builds for applications in a PHP and Node.js e
 
     Utilizes packages from [deb.sury.org](https://deb.sury.org/).
 
-*   Customize the Node.js version (major, e.g. 8.x, 9.x) by building your own image.
+*   Customize the Node.js version (major, e.g. 11.x, 10.x) by building your own image.
 
     Utilizes official packages from [nodejs.org](https://nodejs.org/en/download/package-manager/).
 

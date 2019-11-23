@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins/jenkins
 
 ARG PHP_VERSION=7.3
 

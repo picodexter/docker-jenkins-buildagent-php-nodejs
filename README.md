@@ -4,7 +4,7 @@ This Docker image enables running builds for applications in a PHP and Node.js e
 
 ## Features
 
-*   Customize the PHP version (minor, e.g. 7.3, 7.2) by building your own image.
+*   Customize the PHP version (minor, e.g. 7.4, 7.3) by building your own image.
 
     Utilizes packages from [deb.sury.org](https://deb.sury.org/).
 

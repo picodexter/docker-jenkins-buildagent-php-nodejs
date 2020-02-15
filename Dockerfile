@@ -1,6 +1,6 @@
 FROM jenkins/jenkins
 
-ARG PHP_VERSION=7.3
+ARG PHP_VERSION=7.4
 
 ARG NODE_JS_BRANCH=13.x
 
